@@ -17,6 +17,17 @@ $(function(){
 
     });
 
+    $window.on('load', function(){
+
+      $('#player').trigger('click'); 
+
+    })
+
+    $('#player').on('click',function(){
+        $(this).play(); 
+    });
+
+
     function fsImage(){
 
         var imagewidth    = $(this).width();
@@ -65,9 +76,7 @@ $(function(){
     $window.on('scroll', scrollStuff);
 
 
-    
-
-
+  
     // Primary nav sub menu animation
     $('.has-sub-menu--js').on('click', function(){
 
@@ -114,7 +123,6 @@ $(function(){
     }
     homeSlider();
    
-    
     $('.flipping-drivers-slide:first-child').addClass('active');
 
     // Animate video thumb group
@@ -187,6 +195,10 @@ $(function(){
     }();
 
     $('.flipping-drivers-slider-next-btn').on('click', flipDrivers);
+
+
+
+    
 
 
     
