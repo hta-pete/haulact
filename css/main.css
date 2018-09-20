@@ -1134,7 +1134,71 @@ header.site-header .site-header_shadow {
   margin-right: 5px;
 }
 
+.mobile-contact {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+.mobile-contact li {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #273050;
+  margin: 0 0 0 15px;
+}
+.mobile-contact i {
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 0;
+}
+
+.mobile-menu-btn {
+  display: none;
+  position: absolute;
+  left: 0;
+  float: left;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  margin-right: 15px;
+  background: #273050;
+}
+.mobile-menu-btn span {
+  display: block;
+  position: absolute;
+  width: 25px;
+  left: 21px;
+  height: 3px;
+  background: white;
+}
+.mobile-menu-btn span:nth-child(1) {
+  top: 26px;
+}
+.mobile-menu-btn span:nth-child(2) {
+  top: 33px;
+}
+.mobile-menu-btn span:nth-child(3) {
+  bottom: 27px;
+}
+
 @media (max-width: 960px) {
+  .mobile-menu-btn, .mobile-contact {
+    display: block;
+  }
+
+  .site-header__logo {
+    left: 0;
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .site-header__logo img {
+    display: inline-block;
+  }
+
   .site-header__nav {
     display: none;
   }
