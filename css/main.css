@@ -1206,22 +1206,23 @@ header.site-header .site-header_shadow {
   z-index: 50;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 100%;
   height: 100%;
   overflow: scroll;
   background: #273050;
   padding-top: 130px;
   padding-bottom: 40px;
-  -moz-transform: translateX(-250px);
-  -o-transform: translateX(-250px);
-  -ms-transform: translateX(-250px);
-  -webkit-transform: translateX(-250px);
-  transform: translateX(-250px);
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
   -webkit-transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   -moz-transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   -ms-transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  text-align: center;
 }
 #mobile-menu.active {
   -moz-transform: translateX(0);
@@ -1232,24 +1233,24 @@ header.site-header .site-header_shadow {
 }
 #mobile-menu li {
   display: block;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 14px;
+  line-height: 14px;
   font-weight: 600;
+  text-transform: uppercase;
   margin: 0;
-  padding-left: 22px;
+  padding: 0;
   color: white;
 }
-#mobile-menu li ul li {
-  padding-left: 0;
-  margin-left: 0;
+#mobile-menu li li {
+  font-size: 12px;
+  padding: 10px 0;
 }
-#mobile-menu li:first-child {
-  border-top: none;
+#mobile-menu li li:last-child {
+  padding-bottom: 0;
 }
 #mobile-menu li a {
   color: white;
-  display: block;
-  padding: 10px 0;
+  display: inline-block;
 }
 #mobile-menu li a:hover {
   color: #f59348;
@@ -1257,7 +1258,11 @@ header.site-header .site-header_shadow {
 #mobile-menu li.mobile-menu-header {
   font-size: 16px;
   color: #f59348;
-  padding-top: 30px;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+#mobile-menu li.mobile-menu-header:last-child {
+  border-bottom: none;
 }
 #mobile-menu li.mobile-menu-header ul {
   margin-top: 15px;
