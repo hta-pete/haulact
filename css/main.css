@@ -1252,7 +1252,7 @@ header.site-header .site-header_shadow {
   background: #273050;
   padding-top: 70px;
   padding-bottom: 40px;
-  padding: 80px 22px 40px 22px;
+  padding: 80px 15px 40px 22px;
   -moz-transform: translateX(-100%);
   -o-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
@@ -1273,6 +1273,7 @@ header.site-header .site-header_shadow {
 }
 #mobile-menu li {
   display: block;
+  width: 100%;
   font-size: 14px;
   line-height: 14px;
   font-weight: 600;
@@ -1281,6 +1282,7 @@ header.site-header .site-header_shadow {
   color: white;
 }
 #mobile-menu li li {
+  position: relative;
   font-size: 12px;
   padding: 10px 0;
 }
@@ -1289,12 +1291,14 @@ header.site-header .site-header_shadow {
 }
 #mobile-menu li a {
   color: white;
-  display: inline-block;
+  display: block;
 }
 #mobile-menu li a:hover {
   color: #f59348;
 }
 #mobile-menu li.mobile-menu-header {
+  position: relative;
+  width: 100%;
   font-size: 16px;
   color: #f59348;
   padding: 20px 0;
@@ -1305,6 +1309,12 @@ header.site-header .site-header_shadow {
 }
 #mobile-menu li.mobile-menu-header ul {
   margin-top: 15px;
+}
+#mobile-menu li.mobile-menu-header i {
+  font-size: 13px;
+  position: absolute;
+  right: 0;
+  top: 21px;
 }
 
 @media (max-width: 800px) {
