@@ -228,14 +228,6 @@ header.site-header{
         text-transform:uppercase;
         margin:0;
         color:white;
-        li{
-            position:relative;
-            font-size:13px;
-            padding:13px 0;
-            &:last-child{
-                padding-bottom:0;
-            }
-        }
         a{
             color:white;
             display:inline-block;
@@ -243,10 +235,25 @@ header.site-header{
                 color:$orange;
             }
         }
+        li{
+            position:relative;
+            font-size:13px;
+            padding:13px 0;
+            &:last-child{
+                padding-bottom:0;
+            }
+            a{
+                color:rgba(255,255,255,0.5);
+                display:inline-block;
+                &:hover{
+                    color:$orange;
+                }
+            }
+        }
         &.mobile-menu-header{
             position:relative;
             font-size:16px;
-            color:$orange;
+            color:white;
             padding:20px 0;
             border-bottom:1px solid rgba(255,255,255,0.15);
             &:last-child{
