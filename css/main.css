@@ -238,6 +238,9 @@ html, body {
   font-family: "Montserrat", sans-serif;
   color: #273050;
 }
+html.active, body.active {
+  overflow: hidden;
+}
 
 #main {
   position: relative;
@@ -245,7 +248,6 @@ html, body {
   height: 100%;
   margin: 0 auto;
   padding-top: 70px;
-  overflow: auto;
   -webkit-overflow-scrolling: touch;
   -moz-transform: translateX(0);
   -o-transform: translateX(0);
@@ -264,7 +266,6 @@ html, body {
   -ms-transform: translateX(250px);
   -webkit-transform: translateX(250px);
   transform: translateX(250px);
-  overflow: hidden;
 }
 
 .container {

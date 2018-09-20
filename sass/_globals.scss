@@ -219,6 +219,9 @@ html,body{
 	-webkit-font-smoothing:antialiased;
     font-family:"Montserrat", sans-serif;
     color:$primary;
+    &.active{
+        overflow:hidden;
+    }
 }
 
 #main{
@@ -227,14 +230,13 @@ html,body{
     height:100%;
     margin:0 auto;
     padding-top:70px;
-    overflow:auto;
+    //overflow:auto;
     -webkit-overflow-scrolling: touch;
     @include transform(translateX(0));
     @include transition(transform 0.6s $easeOutExpo);
     &.active{
         @include transform(translateX(250px));
-        overflow:hidden;
-
+        
     }
 }
 .container{

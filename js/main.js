@@ -190,7 +190,7 @@ $(function(){
     $('.mobile-menu-btn').on('click', function(){
 
       $(this).toggleClass('active');
-      $('#mobile-menu, #main').toggleClass('active');
+      $('#mobile-menu, #main, body').toggleClass('active');
 
     });
     
