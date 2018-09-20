@@ -17,16 +17,6 @@ $(function(){
 
     });
 
-    $window.on('load', function(){
-
-      $('#video').trigger('click'); 
-
-    })
-
-    $('#video').on('click',function(){
-        $(this)[0].play(); 
-    });
-
 
     function fsImage(){
 
