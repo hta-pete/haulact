@@ -1281,6 +1281,7 @@ header.site-header .site-header_shadow {
   text-transform: uppercase;
   margin: 0;
   color: white;
+  font-family: "Oswald";
 }
 #mobile-menu li a {
   color: white;
@@ -1292,7 +1293,8 @@ header.site-header .site-header_shadow {
 #mobile-menu li li {
   position: relative;
   font-size: 13px;
-  padding: 13px 0;
+  padding: 12px 0;
+  font-family: "Montserrat";
 }
 #mobile-menu li li:last-child {
   padding-bottom: 0;
@@ -1306,7 +1308,7 @@ header.site-header .site-header_shadow {
 }
 #mobile-menu li.mobile-menu-header {
   position: relative;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   padding: 20px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
