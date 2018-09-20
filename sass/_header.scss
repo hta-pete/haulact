@@ -165,6 +165,7 @@ header.site-header{
         left:21px; 
         height:3px;
         background:white;
+        @include transition(transform 0.6s $easeOutExpo);
         &:nth-child(1){
             top:26px;
         }
@@ -174,6 +175,23 @@ header.site-header{
         &:nth-child(3){
             bottom:27px;
         }
+    }
+    &.active{
+        span{
+            &:nth-child(1){
+                top:34px;
+                @include transform(rotate(45deg));
+            }
+            &:nth-child(2){
+                display:none;
+            }
+            &:nth-child(3){
+                bottom:33px;
+                @include transform(rotate(-45deg));
+            }
+
+        }
+        
     }
 }
 
