@@ -12,8 +12,9 @@ $(function(){
 
     $window.on('resize', function(){ 
                     
-        fsImage();  
-                        
+        fsImage();
+        homeSlider(); 
+
     });
 
     function fsImage(){
@@ -49,6 +50,7 @@ $(function(){
         if( y == 'down' && scrollTop > 90 ){
 
             $('header').addClass('hide');
+            $('.sub-menu--js').slideUp('fast');
 
         } else{
 
@@ -80,21 +82,37 @@ $(function(){
     });
 
 
+    function homeSlider(){
 
-    //Slick slider
-    $('.home-programs-slider').slick({
-          //autoplay:true,
-          //autoplaySpeed:5000,
-          infinite:true,
-          dots:true,
-          slidesToShow:3,
-          slidesToScroll:1,
-          speed: 500,
-          pauseOnHover:true,
-          prevArrow: false,
-          nextArrow: $('.slider-next-btn')
-    });
+      if( $window.width() > 600 ){
 
+        if( !$('.home-programs-slider').hasClass('slick-initialized') ) {
+
+          $('.home-programs-slider').slick({
+                infinite:true,
+                dots:true,
+                slidesToShow:3,
+                slidesToScroll:1,
+                speed: 500,
+                pauseOnHover:true,
+                prevArrow: false,
+                nextArrow: $('.slider-next-btn')
+          });
+
+        }
+          
+      } else{
+
+        if( $('.home-programs-slider').hasClass('slick-initialized') ) {
+
+          $('.home-programs-slider').slick('unslick');
+
+        }
+        
+      }
+
+    }
+    homeSlider();
    
     
     $('.flipping-drivers-slide:first-child').addClass('active');
