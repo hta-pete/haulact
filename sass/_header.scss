@@ -28,6 +28,10 @@ header.site-header{
     z-index:10;
     top:70px;
     right:15px;
+    @include transition(transform 0.6s $easeOutExpo);
+    &.active{
+        @include transform(translateX(100%));
+    }
     .apply-btn{
         display:block;
         width:190px;
@@ -205,15 +209,16 @@ header.site-header{
     overflow:scroll;
     -webkit-overflow-scrolling: touch;
     background:$primary;
-    padding-top:130px;
+    padding-top:70px;
     padding-bottom:40px;
+    padding:80px 22px 40px 22px;
     @include transform(translateX(-100%));
     @include transition(transform 0.6s $easeOutExpo);
     &.active{
         @include transform(translateX(0));
 
     }
-    text-align:center;
+    //text-align:center;
     li{
         display:block;
         font-size:14px;
@@ -221,7 +226,6 @@ header.site-header{
         font-weight:600;
         text-transform:uppercase;
         margin:0;
-        padding:0;
         color:white;
         li{
             font-size:12px;
@@ -240,7 +244,7 @@ header.site-header{
         &.mobile-menu-header{
             font-size:16px;
             color:$orange;
-            padding:30px 0;
+            padding:20px 0;
             border-bottom:1px solid rgba(255,255,255,0.15);
             &:last-child{
                 border-bottom:none;
@@ -252,7 +256,22 @@ header.site-header{
     }
 }
 
-@media(max-width:960px){
+@media(max-width:800px){
+    .site-header__nav-primary{
+        margin-left:25px;
+        li{
+            margin:0 25px 0 0;
+        }
+    }
+    .site-header__nav-secondary{
+        li{
+            margin:0 0 0 15px;
+        }
+    }
+}
+
+
+@media(max-width:720px){
     .mobile-menu-btn, .mobile-contact{
         display:block;
     }

@@ -1041,6 +1041,18 @@ header.site-header .site-header_shadow {
   z-index: 10;
   top: 70px;
   right: 15px;
+  -webkit-transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.site-header__apply.active {
+  -moz-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
 }
 .site-header__apply .apply-btn {
   display: block;
@@ -1238,8 +1250,9 @@ header.site-header .site-header_shadow {
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
   background: #273050;
-  padding-top: 130px;
+  padding-top: 70px;
   padding-bottom: 40px;
+  padding: 80px 22px 40px 22px;
   -moz-transform: translateX(-100%);
   -o-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
@@ -1250,7 +1263,6 @@ header.site-header .site-header_shadow {
   -ms-transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-  text-align: center;
 }
 #mobile-menu.active {
   -moz-transform: translateX(0);
@@ -1266,7 +1278,6 @@ header.site-header .site-header_shadow {
   font-weight: 600;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
   color: white;
 }
 #mobile-menu li li {
@@ -1286,7 +1297,7 @@ header.site-header .site-header_shadow {
 #mobile-menu li.mobile-menu-header {
   font-size: 16px;
   color: #f59348;
-  padding: 30px 0;
+  padding: 20px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 #mobile-menu li.mobile-menu-header:last-child {
@@ -1296,7 +1307,19 @@ header.site-header .site-header_shadow {
   margin-top: 15px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
+  .site-header__nav-primary {
+    margin-left: 25px;
+  }
+  .site-header__nav-primary li {
+    margin: 0 25px 0 0;
+  }
+
+  .site-header__nav-secondary li {
+    margin: 0 0 0 15px;
+  }
+}
+@media (max-width: 720px) {
   .mobile-menu-btn, .mobile-contact {
     display: block;
   }
