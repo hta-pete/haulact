@@ -1252,7 +1252,8 @@ header.site-header .site-header_shadow {
   background: #273050;
   padding-top: 70px;
   padding-bottom: 40px;
-  padding: 80px 15px 40px 70px;
+  padding: 80px 22px 40px 22px;
+  text-align: center;
   -moz-transform: translateX(-100%);
   -o-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
