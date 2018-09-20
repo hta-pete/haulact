@@ -1296,6 +1296,7 @@ header.site-header .site-header_shadow {
   font-size: 13px;
   padding: 12px 0;
   font-family: "Montserrat";
+  letter-spacing: 0px;
 }
 #mobile-menu li li:last-child {
   padding-bottom: 0;
