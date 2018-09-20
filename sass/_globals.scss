@@ -228,6 +228,7 @@ html,body{
     margin:0 auto;
     padding-top:70px;
     overflow:auto;
+    -webkit-overflow-scrolling: touch;
     @include transform(translateX(0));
     @include transition(transform 0.6s $easeOutExpo);
     &.active{

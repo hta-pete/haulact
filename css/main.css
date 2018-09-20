@@ -246,6 +246,7 @@ html, body {
   margin: 0 auto;
   padding-top: 70px;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
   -moz-transform: translateX(0);
   -o-transform: translateX(0);
   -ms-transform: translateX(0);
