@@ -1284,7 +1284,7 @@ header.site-header .site-header_shadow {
 #mobile-menu li li {
   position: relative;
   font-size: 12px;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 #mobile-menu li li:last-child {
   padding-bottom: 0;
