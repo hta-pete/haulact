@@ -230,11 +230,14 @@ header.site-header{
         margin:0;
         color:white;
         font-family:"Oswald";
-        letter-spacing:1px;
+        letter-spacing:0.5px;
         a{
             color:white;
             display:inline-block;
             &:hover{
+                color:$orange;
+            }
+            &.mobile-menu-apply{
                 color:$orange;
             }
         }

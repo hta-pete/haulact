@@ -1282,13 +1282,16 @@ header.site-header .site-header_shadow {
   margin: 0;
   color: white;
   font-family: "Oswald";
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 #mobile-menu li a {
   color: white;
   display: inline-block;
 }
 #mobile-menu li a:hover {
+  color: #f59348;
+}
+#mobile-menu li a.mobile-menu-apply {
   color: #f59348;
 }
 #mobile-menu li li {
