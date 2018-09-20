@@ -177,6 +177,60 @@ header.site-header{
     }
 }
 
+
+#mobile-menu{
+    position:fixed;
+    z-index:50;
+    top:0;left:0;
+    width:250px;
+    height:100%;
+    overflow:scroll;
+    background:$primary;
+    padding-top:130px;
+    padding-bottom:40px;
+    @include transform(translateX(-250px));
+    @include transition(transform 0.6s $easeOutExpo);
+    &.active{
+        @include transform(translateX(0));
+
+    }
+    li{
+        display:block;
+        font-size:12px;
+        line-height:12px;
+        font-weight:600;
+        margin:0;
+        padding-left:22px;
+        //border-top:1px solid rgba(255,255,255,0.1);
+        color:white;
+        ul{
+            li{
+                padding-left:0;
+                margin-left:0;
+            }
+        }
+        &:first-child{
+            border-top:none;
+        }
+        a{
+            color:white;
+            display:block;
+            padding:10px 0;
+            &:hover{
+                color:$orange;
+            }
+        }
+        &.mobile-menu-header{
+            font-size:16px;
+            color:$orange;
+            padding-top:30px;
+            ul{
+                margin-top:15px;
+            }
+        }
+    }
+}
+
 @media(max-width:960px){
     .mobile-menu-btn, .mobile-contact{
         display:block;

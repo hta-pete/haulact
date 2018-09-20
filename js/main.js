@@ -187,7 +187,11 @@ $(function(){
     $('.flipping-drivers-slider-next-btn').on('click', flipDrivers);
 
 
+    $('.mobile-menu-btn').on('click', function(){
 
+      $('#mobile-menu, #main').toggleClass('active');
+
+    });
     
 
 

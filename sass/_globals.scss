@@ -227,6 +227,12 @@ html,body{
     height:100%;
     margin:0 auto;
     padding-top:70px;
+    @include transform(translateX(0));
+    @include transition(transform 0.6s $easeOutExpo);
+    &.active{
+        @include transform(translateX(250px));
+
+    }
 }
 .container{
 	position:relative;
