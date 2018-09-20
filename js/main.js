@@ -19,13 +19,11 @@ $(function(){
 
     $window.on('load', function(){
 
-      $('#player').trigger('click'); 
+      $('.home-hero #video')[0].play(); 
 
-    })
-
-    $('#player').on('click',function(){
-        $(this).play(); 
     });
+
+    
 
 
     function fsImage(){
