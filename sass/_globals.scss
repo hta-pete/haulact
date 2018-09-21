@@ -96,6 +96,9 @@ p{
     font-size:15px;
     line-height:25px;
     margin-top:15px;
+    &:first-child{
+        margin-top:0;
+    }
 }
 .text-decor{
     position:relative;
@@ -455,6 +458,7 @@ section{
     padding:250px 0 250px 0;
     background:$primary;
     overflow:hidden;
+    text-align:center;
     .bg-text{
         position:absolute;
         width:100%;

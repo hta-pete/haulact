@@ -1,0 +1,232 @@
+.driver-hero{
+    position:relative;
+    width:100%;
+    height:90%;
+    max-height:960px;
+    min-height:600px;
+    #driver-hero-copy{
+        position:absolute;
+        width:100%;
+        bottom:90px;
+        z-index:2;
+        text-align:center;
+        h2{
+            position:relative;
+            z-index:4;
+            font-size:160px;
+            line-height:160px;
+            color:white;
+            &:after{
+                width:100px;
+                height:5px;
+            }
+        }
+    }
+    .driver-hero-img{
+        position:absolute;
+        top:0;left:0;
+        width:100%;
+        height:100%;
+        background:$dark_blue;
+        overflow:hidden;
+        img{
+            z-index:0;
+            display:block;
+            position:absolute;
+            top:0;left:0;
+            width:100%;
+            @include opacity(0.7);
+            -webkit-backface-visibility: none;
+            &.hide{
+                @include opacity(0);
+            }
+        }
+    }
+}
+
+@media(max-width:960px){
+
+    .driver-hero{
+        position:relative;
+        width:100%;
+        height:100%;
+        min-height:100%;
+        #driver-hero-copy{
+            h2{
+                position:relative;
+                z-index:4;
+                font-size:120px;
+                line-height:120px;
+                color:white;
+                &:after{
+                    width:70px;
+                    height:4px;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+@media(max-width:600px){
+
+    .driver-hero{
+        position:relative;
+        width:100%;
+        height:100%;
+        #driver-hero-copy{
+            h2{
+                position:relative;
+                z-index:4;
+                font-size:80px;
+                line-height:80px;
+                color:white;
+                &:after{
+                    width:50px;
+                    height:4px;
+                }
+            }
+        }
+    } 
+}
+@media(max-width:480px){
+
+    .driver-hero{
+        
+        #driver-hero-copy{
+            h2{
+                
+                font-size:65px;
+                line-height:65px;
+                
+                &:after{
+                    width:50px;
+                    height:4px;
+                }
+            }
+        }
+    } 
+}
+
+
+
+
+
+.driver-story-wrap{
+	position:relative;
+	padding:120px 0;
+	.col-1-2{
+		&:first-child{
+			padding-right:30px;
+		}
+		&:last-child{
+			padding-left:30px;
+		}
+	}
+	.driver-story-img-slides{
+		position:absolute;
+		width:50%;
+		bottom:4px;
+		left:0;
+		padding-right:30px;
+		.driver-story-img-slider{
+			
+		}
+		img{
+			display:block;
+			width:100%;
+			height:auto;
+		}
+	}
+	blockquote{
+		padding:60px 0;
+		width:100%;
+		text-align:center;
+		p{
+			font-size:60px;
+			line-height:65px;
+			font-family:"Oswald";
+			font-weight:600;
+			text-transform:uppercase;
+
+		}
+	}
+	figcaption{
+		font-size:13px;
+		font-weight:500;
+		margin-top:10px;
+	}
+}
+
+.driver-story-next-btn{
+    position:absolute;
+    cursor:pointer;
+    z-index:10;
+    top:50%;
+    margin-top:-35px;
+    right:10px;
+    width:40px;
+    height:40px;
+    background:white;
+    box-shadow:0 6px 20px 0 rgba(0,0,0,0.4);
+    border-radius:50px;
+    i{
+        font-size:14px;
+        color:$primary;
+    }
+}
+
+
+.driver-story-paginate{
+	background:$primary;
+	padding:120px 0;
+	text-align:center;
+	.bg-text{
+        position:absolute;
+        width:100%;
+        text-align:center;
+        margin-top:-100px;
+        z-index:0;
+        font-size:200px;
+        line-height:200px;
+        font-weight:500;
+        color:rgba(255,255,255,0.035);
+    }
+    h3{
+		font-size:25px;
+        line-height:25px;
+        color:white;
+        margin-bottom:40px;
+	}
+	.col-1-2{
+		position:relative;
+		padding:0 30px;
+		perspective: 800px;
+		img{
+			position:relative;
+            z-index:2;
+            display:block;
+			width:100%;
+			height:auto;
+			will-change:transform;
+            @include transition(transform 1.5s $easeOutExpo);
+            box-shadow:0 40px 90px 0 rgba(0,0,0,0.5);
+		}
+		h4{
+	        position:absolute;
+	        z-index:6;
+	        width:100%;
+	        text-align:center;
+	        left:0;
+	        bottom:30px;
+	        font-size:40px;
+	        line-height:40px;
+	        letter-spacing:1px;
+	        color:white;
+	        @include transition(transform 1.5s $easeOutExpo);
+	    }
+	}
+}
+
