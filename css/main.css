@@ -1275,7 +1275,7 @@ header.site-header .site-header_shadow {
 #mobile-menu li {
   display: block;
   width: 100%;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1313,7 +1313,6 @@ header.site-header .site-header_shadow {
 }
 #mobile-menu li.mobile-menu-header {
   position: relative;
-  font-size: 18px;
   color: white;
   padding: 20px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
