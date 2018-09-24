@@ -133,7 +133,7 @@ $(function(){
     $('.flipping-drivers-slide:first-child').addClass('active');
 
     // Animate video thumb group
-    $('.flipping-drivers-slider, .driver-story-paginate .col-1-2').on('mousemove', rotateCard);
+    $('.flipping-drivers-slider, .driver-story-paginate .col-1-2, .driver-stories-grid .col-1-2').on('mousemove', rotateCard);
 
     function rotateCard(e){
 
@@ -153,7 +153,7 @@ $(function(){
 
     }
 
-    $('.flipping-drivers-slider, .driver-story-paginate .col-1-2').on('mouseleave', function(){
+    $('.flipping-drivers-slider, .driver-story-paginate .col-1-2, .driver-stories-grid .col-1-2').on('mouseleave', function(){
       
       $(this).find('img').css('transform', 'rotateX(' + 0 + 'deg) rotateY(' + 0 + 'deg) translateY(0) translateZ(0)');
       $(this).find('h4').css('transform', 'rotateX(' + 0 + 'deg) rotateY(' + 0 + 'deg) translateY(0) translateZ(0)');

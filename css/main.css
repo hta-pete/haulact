@@ -250,7 +250,6 @@ html.active, body.active {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding-top: 70px;
   -moz-transform: translateX(0);
   -o-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -589,7 +588,6 @@ html.active, body.active {
   padding: 250px 0 250px 0;
   background: #273050;
   overflow: hidden;
-  text-align: center;
 }
 .home-driver-stories .bg-text {
   position: absolute;
@@ -645,7 +643,8 @@ html.active, body.active {
   position: relative;
   z-index: 2;
   display: block;
-  box-shadow: 0 50px 120px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 50px 120px 0 rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
 }
 
 @media (max-width: 600px) {
@@ -907,7 +906,7 @@ html.active, body.active {
   cursor: pointer;
   z-index: 10;
   top: 50%;
-  margin-top: -25px;
+  margin-top: 35px;
   right: -40px;
   width: 20px;
   height: 20px;
@@ -1654,14 +1653,14 @@ footer .copyright span {
 
 .driver-story-paginate {
   background: #273050;
-  padding: 120px 0;
+  padding: 200px 0 120px 0;
   text-align: center;
 }
 .driver-story-paginate .bg-text {
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: -100px;
+  margin-top: -180px;
   z-index: 0;
   font-size: 200px;
   line-height: 200px;
@@ -1669,14 +1668,15 @@ footer .copyright span {
   color: rgba(255, 255, 255, 0.035);
 }
 .driver-story-paginate h3 {
-  font-size: 25px;
-  line-height: 25px;
+  font-size: 50px;
+  line-height: 50px;
   color: white;
   margin-bottom: 40px;
 }
 .driver-story-paginate .col-1-2 {
   position: relative;
-  padding: 0 30px;
+  z-index: 2;
+  padding: 0 40px;
   perspective: 800px;
 }
 .driver-story-paginate .col-1-2 img {
@@ -1691,7 +1691,8 @@ footer .copyright span {
   -ms-transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
   transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
-  box-shadow: 0 40px 90px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 40px 90px 0 rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
 }
 .driver-story-paginate .col-1-2 h4 {
   position: absolute;
@@ -1700,8 +1701,8 @@ footer .copyright span {
   text-align: center;
   left: 0;
   bottom: 30px;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 30px;
+  line-height: 30px;
   letter-spacing: 1px;
   color: white;
   -webkit-transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -1709,6 +1710,85 @@ footer .copyright span {
   -ms-transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
   transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.driver-story-paginate .primary-btn {
+  position: relative;
+  z-index: 0;
+  color: #f59348;
+  margin-top: 40px;
+}
+
+.driver-stories-grid {
+  background: #273050;
+  padding: 240px 0 120px 0;
+  text-align: center;
+}
+.driver-stories-grid .container {
+  margin-bottom: 80px;
+}
+.driver-stories-grid .container:last-of-type {
+  margin-bottom: 0;
+}
+.driver-stories-grid .bg-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: -120px;
+  z-index: 0;
+  font-size: 300px;
+  line-height: 300px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.035);
+}
+.driver-stories-grid h3 {
+  font-size: 50px;
+  line-height: 50px;
+  color: white;
+  margin-bottom: 80px;
+}
+.driver-stories-grid .col-1-2 {
+  position: relative;
+  z-index: 2;
+  perspective: 800px;
+  padding: 0 40px;
+}
+.driver-stories-grid .col-1-2 img {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: auto;
+  will-change: transform;
+  -webkit-transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0 40px 90px 0 rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+.driver-stories-grid .col-1-2 h4 {
+  position: absolute;
+  z-index: 6;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  bottom: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: white;
+  -webkit-transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.driver-stories-grid .primary-btn {
+  position: relative;
+  z-index: 0;
+  color: #f59348;
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=main.css.map */
