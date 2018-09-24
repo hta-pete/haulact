@@ -170,7 +170,7 @@
     width:40px;
     height:40px;
     background:white;
-    box-shadow:0 6px 20px 0 rgba(0,0,0,0.4);
+    box-shadow:0 3px 10px 0 rgba(0,0,0,0.4);
     border-radius:50px;
     i{
         font-size:14px;
@@ -296,11 +296,98 @@
 	        @include transition(transform 1.5s $easeOutExpo);
 	    }
 	}
-	.primary-btn{
-		position:relative;
-		z-index:0;
-		color:$orange;
-		margin-top:40px;
-	}
+}
+
+
+@media(max-width:1100px){
+
+    .driver-stories-grid{
+        padding:220px 0 120px 0;
+        .bg-text{
+            position:absolute;
+            width:100%;
+            text-align:center;
+            margin-top:-80px;
+            z-index:0;
+            font-size:200px;
+            line-height:200px;
+            font-weight:500;
+            color:rgba(255,255,255,0.035);
+        }
+    }
+}
+
+@media(max-width:800px){
+    .driver-stories-grid{
+        padding:200px 0 120px 0;
+        .container{
+            max-width:315px;
+            margin-bottom:0;
+        }
+        .bg-text{
+            position:absolute;
+            width:100%;
+            text-align:center;
+            margin-top:-60px;
+            z-index:0;
+            font-size:150px;
+            line-height:150px;
+            font-weight:500;
+            color:rgba(255,255,255,0.035);
+        }
+        h3{
+            font-size:35px;
+            line-height:35px;
+            color:white;
+            margin-bottom:40px;
+        }
+        .col-1-2{
+            width:100%;
+            float:none;
+            padding:20px 0;
+            h4{
+                bottom:50px;
+                font-size:25px;
+                line-height:25px;
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .driver-stories-grid{
+        padding:210px 0 60px 0;
+        .container{
+            max-width:315px;
+            margin-bottom:0;
+        }
+        .bg-text{
+            position:absolute;
+            width:100%;
+            text-align:center;
+            margin-top:-80px;
+            z-index:0;
+            font-size:90px;
+            line-height:90px;
+            font-weight:500;
+            color:rgba(255,255,255,0.035);
+        }
+        h3{
+            font-size:30px;
+            line-height:30px;
+            color:white;
+            margin-bottom:30px;
+        }
+        .col-1-2{
+            width:100%;
+            float:none;
+            padding:20px 0;
+            h4{
+                bottom:50px;
+                font-size:25px;
+                line-height:25px;
+            }
+        }
+    }
 }
 
