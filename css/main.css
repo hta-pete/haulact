@@ -1571,6 +1571,9 @@ footer .copyright span {
     width: 100%;
     height: 100%;
   }
+  .driver-hero #driver-hero-copy {
+    bottom: 60px;
+  }
   .driver-hero #driver-hero-copy h2 {
     position: relative;
     z-index: 4;
@@ -1584,9 +1587,12 @@ footer .copyright span {
   }
 }
 @media (max-width: 480px) {
+  .driver-hero #driver-hero-copy {
+    bottom: 40px;
+  }
   .driver-hero #driver-hero-copy h2 {
-    font-size: 65px;
-    line-height: 65px;
+    font-size: 50px;
+    line-height: 50px;
   }
   .driver-hero #driver-hero-copy h2:after {
     width: 50px;
@@ -1651,6 +1657,42 @@ footer .copyright span {
   color: #273050;
 }
 
+@media (max-width: 600px) {
+  .driver-story-wrap {
+    padding: 30px 0;
+  }
+  .driver-story-wrap .col-1-2 {
+    width: 100%;
+    float: none;
+  }
+  .driver-story-wrap .col-1-2:first-child {
+    padding-right: 0;
+  }
+  .driver-story-wrap .col-1-2:last-child {
+    padding-left: 0;
+  }
+  .driver-story-wrap .driver-story-img-slides {
+    position: relative;
+    width: 100%;
+    padding: 30px 0 15px 0;
+  }
+  .driver-story-wrap blockquote {
+    padding: 30px 0;
+  }
+  .driver-story-wrap blockquote p {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .driver-story-wrap figcaption {
+    font-size: 12px;
+  }
+
+  .driver-story-next-btn {
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+}
 .driver-story-paginate {
   background: #273050;
   padding: 200px 0 120px 0;
@@ -1666,12 +1708,6 @@ footer .copyright span {
   line-height: 200px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.035);
-}
-.driver-story-paginate h3 {
-  font-size: 50px;
-  line-height: 50px;
-  color: white;
-  margin-bottom: 40px;
 }
 .driver-story-paginate .col-1-2 {
   position: relative;
@@ -1718,6 +1754,29 @@ footer .copyright span {
   margin-top: 40px;
 }
 
+@media (max-width: 600px) {
+  .driver-story-paginate {
+    padding: 90px 0 60px 0;
+  }
+  .driver-story-paginate .bg-text {
+    margin-top: -60px;
+    font-size: 90px;
+    line-height: 90px;
+  }
+  .driver-story-paginate .container {
+    max-width: 315px;
+  }
+  .driver-story-paginate .col-1-2 {
+    width: 100%;
+    float: none;
+    padding: 20px 0;
+  }
+  .driver-story-paginate .col-1-2 h4 {
+    bottom: 50px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
 .driver-stories-grid {
   background: #273050;
   padding: 240px 0 120px 0;
@@ -1790,15 +1849,9 @@ footer .copyright span {
     padding: 220px 0 120px 0;
   }
   .driver-stories-grid .bg-text {
-    position: absolute;
-    width: 100%;
-    text-align: center;
     margin-top: -80px;
-    z-index: 0;
     font-size: 200px;
     line-height: 200px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.035);
   }
 }
 @media (max-width: 800px) {
@@ -1810,20 +1863,13 @@ footer .copyright span {
     margin-bottom: 0;
   }
   .driver-stories-grid .bg-text {
-    position: absolute;
-    width: 100%;
-    text-align: center;
     margin-top: -60px;
-    z-index: 0;
     font-size: 150px;
     line-height: 150px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.035);
   }
   .driver-stories-grid h3 {
     font-size: 35px;
     line-height: 35px;
-    color: white;
     margin-bottom: 40px;
   }
   .driver-stories-grid .col-1-2 {
@@ -1841,36 +1887,15 @@ footer .copyright span {
   .driver-stories-grid {
     padding: 210px 0 60px 0;
   }
-  .driver-stories-grid .container {
-    max-width: 315px;
-    margin-bottom: 0;
-  }
   .driver-stories-grid .bg-text {
-    position: absolute;
-    width: 100%;
-    text-align: center;
     margin-top: -80px;
-    z-index: 0;
     font-size: 90px;
     line-height: 90px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.035);
   }
   .driver-stories-grid h3 {
     font-size: 30px;
     line-height: 30px;
-    color: white;
     margin-bottom: 30px;
-  }
-  .driver-stories-grid .col-1-2 {
-    width: 100%;
-    float: none;
-    padding: 20px 0;
-  }
-  .driver-stories-grid .col-1-2 h4 {
-    bottom: 50px;
-    font-size: 25px;
-    line-height: 25px;
   }
 }
 
