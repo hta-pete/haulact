@@ -1901,27 +1901,45 @@ footer .copyright span {
 .apply-now-hero {
   position: relative;
   width: 100%;
-  height: 90%;
-  max-height: 960px;
-  min-height: 600px;
+  height: 550px;
+  padding-top: 70px;
 }
 .apply-now-hero #apply-now-hero-copy {
   position: absolute;
   width: 100%;
-  bottom: 90px;
   z-index: 2;
   text-align: center;
 }
 .apply-now-hero #apply-now-hero-copy h2 {
   position: relative;
   z-index: 4;
-  font-size: 160px;
-  line-height: 160px;
+  font-size: 80px;
+  line-height: 80px;
   color: white;
 }
 .apply-now-hero #apply-now-hero-copy h2:after {
   width: 100px;
   height: 5px;
+}
+.apply-now-hero #apply-now-hero-copy p {
+  font-size: 16px;
+  color: white;
+  margin: 30px auto 0 auto;
+  max-width: 600px;
+}
+.apply-now-hero #apply-now-hero-copy .apply-btn {
+  display: inline-block;
+  margin-top: 40px;
+  width: 230px;
+  height: 50px;
+  background: #f59348;
+  color: #273050;
+  font-family: "Oswald";
+  font-weight: 600;
+  text-align: center;
+  font-size: 20px;
+  line-height: 50px;
+  text-transform: uppercase;
 }
 .apply-now-hero .apply-now-hero-img {
   position: absolute;
@@ -1929,7 +1947,7 @@ footer .copyright span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #191e2e;
+  background: #273050;
   overflow: hidden;
 }
 .apply-now-hero .apply-now-hero-img img {
@@ -2003,7 +2021,7 @@ footer .copyright span {
 }
 .apply-now-wrap {
   position: relative;
-  padding: 120px 0;
+  padding: 60px 0;
 }
 
 @media (max-width: 600px) {
@@ -2012,18 +2030,19 @@ footer .copyright span {
   }
 }
 .apply-form {
-  background: #ebebeb;
+  background: #273050;
   text-align: center;
   padding-bottom: 90px;
+  padding-top: 30px;
 }
 .apply-form .container {
-  max-width: 600px;
+  max-width: 700px;
 }
 .apply-form h3 {
   font-size: 40px;
   line-height: 45px;
   text-transform: uppercase;
-  color: #273050;
+  color: white;
   padding-top: 40px;
 }
 .apply-form p {
@@ -2033,12 +2052,12 @@ footer .copyright span {
   margin: 0 auto 0 auto;
   padding-top: 20px;
   text-align: center;
-  color: #273050;
+  color: white;
 }
 
 form {
   padding: 30px 30px 50px 30px;
-  margin-top: 30px;
+  margin-top: 60px;
   background: white;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -2150,10 +2169,19 @@ form .custom-select:after {
   position: absolute;
   pointer-events: none;
 }
-form button.primary-btn {
+form button.apply-btn {
+  display: inline-block;
   margin-top: 20px;
+  width: 230px;
+  height: 50px;
   background: #f59348;
   color: #273050;
+  font-family: "Oswald";
+  font-weight: 600;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
 }
 form .checkbox {
   margin-top: 30px;

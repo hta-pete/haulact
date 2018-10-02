@@ -1,25 +1,44 @@
 .apply-now-hero{
     position:relative;
     width:100%;
-    height:90%;
-    max-height:960px;
-    min-height:600px;
+    height:550px;
+    padding-top:70px;
     #apply-now-hero-copy{
         position:absolute;
         width:100%;
-        bottom:90px;
+        //bottom:90px;
         z-index:2;
         text-align:center;
         h2{
             position:relative;
             z-index:4;
-            font-size:160px;
-            line-height:160px;
+            font-size:80px;
+            line-height:80px;
             color:white;
             &:after{
                 width:100px;
                 height:5px;
             }
+        }
+        p{
+            font-size:16px;
+            color:white;
+            margin:30px auto 0 auto;
+            max-width:600px;
+        }
+        .apply-btn{
+            display:inline-block;
+            margin-top:40px;
+            width:230px;
+            height:50px;
+            background:$orange;
+            color:$primary;
+            font-family:"Oswald";
+            font-weight:600;
+            text-align:center;
+            font-size:20px;
+            line-height:50px;
+            text-transform:uppercase;
         }
     }
     .apply-now-hero-img{
@@ -27,7 +46,7 @@
         top:0;left:0;
         width:100%;
         height:100%;
-        background:$dark_blue;
+        background:$primary;
         overflow:hidden;
         img{
             z-index:0;
@@ -113,7 +132,7 @@
 
 .apply-now-wrap{
 	position:relative;
-	padding:120px 0;
+	padding:60px 0;
 }
 
 @media(max-width:600px){
@@ -126,17 +145,18 @@
 
 
 .apply-form{
-    background:#ebebeb;
+    background:$primary;
     text-align:center;
     padding-bottom:90px;
+    padding-top:30px;
     .container{
-        max-width:600px;
+        max-width:700px;
     }
     h3{
         font-size:40px;
         line-height:45px;
         text-transform:uppercase;
-        color:$primary;
+        color:white;
         padding-top:40px;
     }
     p{
@@ -146,12 +166,12 @@
         margin:0 auto 0 auto;
         padding-top:20px;
         text-align:center;
-        color:$primary;
+        color:white;
     }
 }
 form{
     padding:30px 30px 50px 30px;
-    margin-top:30px;
+    margin-top:60px;
     background:white;
     box-shadow:0 2px 8px 0 rgba(0,0,0,0.2);
     .fields{
@@ -242,11 +262,21 @@ form{
             pointer-events:none;
         }
     } 
-    button.primary-btn{
+    button.apply-btn{
+        display:inline-block;
         margin-top:20px;
+        width:230px;
+        height:50px;
         background:$orange;
         color:$primary;
-    } 
+        font-family:"Oswald";
+        font-weight:600;
+        text-align:center;
+        font-size:20px;
+        //line-height:50px;
+        text-transform:uppercase;
+        border:none;
+    }
     .checkbox{
         margin-top:30px;
         label{
