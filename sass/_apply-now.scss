@@ -1,8 +1,13 @@
+.bg-blue{
+    background:$primary;
+}
 .apply-now-hero{
     position:relative;
     width:100%;
-    height:550px;
+    height:70%;
+    min-height:600px;
     padding-top:70px;
+    background:$primary;
     #apply-now-hero-copy{
         position:absolute;
         width:100%;
@@ -41,24 +46,21 @@
             text-transform:uppercase;
         }
     }
-    .apply-now-hero-img{
+    .video-wrap{
         position:absolute;
         top:0;left:0;
         width:100%;
         height:100%;
-        background:$primary;
+        background:$dark_blue;
         overflow:hidden;
-        img{
+        video{
             z-index:0;
             display:block;
             position:absolute;
             top:0;left:0;
             width:100%;
-            @include opacity(0.7);
+            @include opacity(0.2);
             -webkit-backface-visibility: none;
-            &.hide{
-                @include opacity(0);
-            }
         }
     }
 }
@@ -132,7 +134,11 @@
 
 .apply-now-wrap{
 	position:relative;
-	padding:60px 0;
+    margin-top:-50px;
+	padding:0 0 50px 0;
+    > .container{
+        max-width:750px;
+    }
 }
 
 @media(max-width:600px){
@@ -145,19 +151,20 @@
 
 
 .apply-form{
-    background:$primary;
+    background:white;
+    border-radius:6px;
     text-align:center;
-    padding-bottom:90px;
-    padding-top:30px;
+    padding:30px 30px 50px 30px;
+    box-shadow:0 40px 140px 0 rgba(0,0,0,0.35);
     .container{
-        max-width:700px;
+        //max-width:550px;
     }
     h3{
         font-size:40px;
         line-height:45px;
         text-transform:uppercase;
-        color:white;
-        padding-top:40px;
+        color:$primary;
+        padding-top:20px;
     }
     p{
         font-size:15px;
@@ -166,14 +173,13 @@
         margin:0 auto 0 auto;
         padding-top:20px;
         text-align:center;
-        color:white;
+        color:$primary;
     }
 }
 form{
-    padding:30px 30px 50px 30px;
-    margin-top:60px;
-    background:white;
-    box-shadow:0 2px 8px 0 rgba(0,0,0,0.2);
+    margin-top:50px;
+    //background:white;
+    //box-shadow:0 2px 8px 0 rgba(0,0,0,0.2);
     .fields{
         margin-top:2%;
         &:first-child{
