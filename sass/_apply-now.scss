@@ -6,11 +6,12 @@
     width:100%;
     height:70%;
     min-height:600px;
-    padding-top:70px;
+    //padding-top:70px;
     background:$primary;
     #apply-now-hero-copy{
         position:absolute;
         width:100%;
+        padding-top:70px;
         //bottom:90px;
         z-index:2;
         text-align:center;
@@ -120,6 +121,11 @@
             }
             p{
                 display:none;
+            }
+        }
+        .video-wrap{
+            video{
+                @include opacity(0.3);
             }
         }
     }

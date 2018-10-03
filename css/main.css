@@ -1907,12 +1907,12 @@ footer .copyright span {
   width: 100%;
   height: 70%;
   min-height: 600px;
-  padding-top: 70px;
   background: #273050;
 }
 .apply-now-hero #apply-now-hero-copy {
   position: absolute;
   width: 100%;
+  padding-top: 70px;
   z-index: 2;
   text-align: center;
 }
@@ -2018,6 +2018,10 @@ footer .copyright span {
   }
   .apply-now-hero #apply-now-hero-copy p {
     display: none;
+  }
+  .apply-now-hero .video-wrap video {
+    opacity: 0.3;
+    filter: alpha(opacity=30);
   }
 }
 .apply-now-wrap {
