@@ -2237,7 +2237,6 @@ form .cancel-btn {
   }
   form .fields .col-1-2 {
     width: 100%;
-    margin-top: 1%;
   }
   form .fields .col-1-2:first-child {
     margin-right: 0;
@@ -2254,13 +2253,11 @@ form .cancel-btn {
   form .fields .col-1-2 .col-1-2:last-child {
     margin-left: 0%;
   }
+  form input[type="text"], form input[type="email"], form .custom-select {
+    margin-top: 5px;
+  }
   form .checkbox label {
     font-size: 12px;
-  }
-  form .checkbox input {
-    margin-top: 1px;
-    margin-right: 8px;
-    vertical-align: middle;
   }
   form label {
     font-size: 14px;

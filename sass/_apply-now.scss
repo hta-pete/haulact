@@ -336,7 +336,6 @@ form{
             }
             .col-1-2{
                 width:100%;
-                margin-top:1%;
                 &:first-child{
                     margin-right:0;
                 }
@@ -354,17 +353,12 @@ form{
                 }
             }
         }
-        .checkbox{
-            
-            label{
-                
-                font-size:12px;
-                
-            }
-            input{
-                margin-top:1px;
-                margin-right:8px;
-                vertical-align:middle;
+        input[type="text"], input[type="email"], .custom-select{
+            margin-top:5px;
+        }
+        .checkbox{ 
+            label{ 
+                font-size:12px; 
             }
         }
         label{
