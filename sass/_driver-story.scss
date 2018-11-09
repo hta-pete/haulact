@@ -1,8 +1,13 @@
+/* ––––––––––––––––––––––––––––––––––––––––––––
+
+-- Driver Stories
+
+––––––––––––––––––––––––––––––––––––––––––– */
 .driver-hero{
     position:relative;
     width:100%;
     height:90%;
-    max-height:960px;
+    max-height:1024px;
     min-height:600px;
     #driver-hero-copy{
         position:absolute;
@@ -35,7 +40,7 @@
             position:absolute;
             top:0;left:0;
             width:100%;
-            @include opacity(0.7);
+            @include opacity(0.8);
             -webkit-backface-visibility: none;
             &.hide{
                 @include opacity(0);
@@ -127,10 +132,32 @@
 			padding-left:30px;
 		}
 	}
+    .driver-story-quick-stats{
+        padding:30px;
+        background:$light_gray;
+        li{
+            display:block;
+            font-size:16px;
+            font-family:"Oswald";
+            text-transform:uppercase;
+            font-weight:500;
+            letter-spacing:0.5px;
+            margin-bottom:10px;
+            &:before{
+                content:"";
+                display:inline-block;
+                width:15px;
+                height:3px;
+                background:$orange;
+                vertical-align:5px;
+                margin-right:10px;
+            }
+        }
+    }
 	.driver-story-img-slides{
 		position:absolute;
 		width:50%;
-		bottom:4px;
+		top:5px;
 		left:0;
 		padding-right:30px;
 		.driver-story-img-slider{
@@ -142,8 +169,18 @@
 			height:auto;
 		}
 	}
+    h4{
+        letter-spacing:0.5px;
+        font-size:18px;
+        line-height:23px;
+        margin-bottom:15px;
+        margin-top:40px;
+        &:first-of-type{
+            margin-top:0;
+        }
+    }
 	blockquote{
-		padding:60px 0;
+		padding:90px 0;
 		width:100%;
 		text-align:center;
 		p{
@@ -333,8 +370,8 @@
         color:rgba(255,255,255,0.035);
     }
     h3{
-		font-size:50px;
-        line-height:50px;
+		font-size:60px;
+        line-height:60px;
         color:white;
         margin-bottom:80px;
 	}

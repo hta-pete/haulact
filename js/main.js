@@ -116,6 +116,8 @@ $(function(){
     function driverStorySlider(){
         
         $('.driver-story-img-slider').slick({
+                autoplay:true,
+                autoplaySpeed:5000,
                 infinite:true,
                 dots:false,
                 slidesToShow:1,
