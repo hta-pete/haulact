@@ -88,7 +88,7 @@ header.site-header{
         position:absolute;
         left:-20px;
         width:200px;
-        background:rgba(24,36,67,0.95);
+        background:$primary;
         li{
             display:block;
             font-size:12px;
@@ -151,7 +151,6 @@ header.site-header{
     }
 }
 
-
 .mobile-menu-btn{
     display:none;
     position:absolute;
@@ -193,12 +192,9 @@ header.site-header{
                 bottom:33px;
                 @include transform(rotate(-45deg));
             }
-
-        }
-        
+        }     
     }
 }
-
 
 #mobile-menu{
     position:fixed;
@@ -219,7 +215,6 @@ header.site-header{
         @include transform(translateX(0));
 
     }
-    //text-align:center;
     li{
         display:block;
         width:100%;
@@ -292,7 +287,6 @@ header.site-header{
         }
     }
 }
-
 
 @media(max-width:720px){
     .mobile-menu-btn, .mobile-contact{

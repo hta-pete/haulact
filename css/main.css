@@ -1126,7 +1126,7 @@ header.site-header .site-header_shadow {
   position: absolute;
   left: -20px;
   width: 200px;
-  background: rgba(24, 36, 67, 0.95);
+  background: #273050;
 }
 .site-header__nav .sub-menu li {
   display: block;
