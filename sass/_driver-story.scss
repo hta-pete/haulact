@@ -189,7 +189,10 @@
 			font-family:"Oswald";
 			font-weight:600;
 			text-transform:uppercase;
-
+            &:after{
+                width:100px;
+                height:5px;
+            }
 		}
 	}
 	figcaption{

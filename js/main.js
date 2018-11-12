@@ -131,6 +131,42 @@ $(function(){
     }
     driverStorySlider();
 
+    function rememberingTomSlider(){
+        
+        $('.remembering-tom-slides').slick({
+                autoplay:true,
+                autoplaySpeed:5000,
+                infinite:true,
+                dots:false,
+                slidesToShow:1,
+                slidesToScroll:1,
+                speed: 1000,
+                prevArrow: false,
+                nextArrow: $('.remembering-tom-next-btn'),
+                fade: true
+          });
+
+    }
+    rememberingTomSlider();
+
+
+    function actPlazaSlider(){
+        
+        $('.act-plaza-slides').slick({
+                autoplay:true,
+                autoplaySpeed:5000,
+                infinite:true,
+                dots:false,
+                slidesToShow:3,
+                slidesToScroll:1,
+                speed: 600,
+                prevArrow: false,
+                nextArrow: $('.act-plaza-next-btn'),
+          });
+
+    }
+    actPlazaSlider();
+
    
     $('.flipping-drivers-slide:first-child').addClass('active');
 
@@ -219,7 +255,7 @@ $(function(){
       rotate_X = e.pageX - mouseX;
       rotate_Y = e.pageY - mouseY;
 
-      $(this).find('.poster').css('transform', 'translateX(' + -rotate_X*0.08 + 'px) translateY(' + -rotate_Y*0.08 + 'px)');
+      $(this).find('.poster').css('transform', 'translateX(' + -rotate_X*0.05 + 'px) translateY(' + -rotate_Y*0.05 + 'px)');
       $('.poster-left').css('transform', 'scale(0.6) translateX(' + -rotate_X*0.03 + 'px) translateY(' + -rotate_Y*0.03 + 'px)');
       $('.poster-right').css('transform', 'scale(0.6) translateX(' + -rotate_X*0.03 + 'px) translateY(' + -rotate_Y*0.03 + 'px)');
 

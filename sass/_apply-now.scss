@@ -379,13 +379,11 @@ form{
 .career-wrap{
     position:relative;
     padding:90px 0;
-    > .container{
-        //max-width:750px;
-    }
     h2{
         font-size:50px;
         line-height:55px;
         text-align:center;
+        margin-bottom:30px;
     }
     p{
         font-size:15px;
@@ -409,7 +407,7 @@ form{
         max-width:600px;
         margin:0 auto;
         box-shadow:0 30px 120px 0 rgba(0,0,0,0.8);
-        border-radius:10px;
+        //border-radius:10px;
         overflow:hidden;
         background:$dark_blue;
         @include transition(all 1.5s $easeOutExpo);
@@ -428,7 +426,7 @@ form{
         z-index:0;
         @include transform(scale(0.6));
         box-shadow:0 10px 40px 0 rgba(0,0,0,0.6);
-        border-radius:10px;
+        //border-radius:10px;
         overflow:hidden;
         background:$dark_blue;
         @include transition(all 1.5s $easeOutExpo);
@@ -445,7 +443,7 @@ form{
         z-index:0;
         @include transform(scale(0.6));
         box-shadow:0 10px 40px 0 rgba(0,0,0,0.6);
-        border-radius:10px;
+        //border-radius:10px;
         overflow:hidden;
         background:$dark_blue;
         @include transition(all 1.5s $easeOutExpo);

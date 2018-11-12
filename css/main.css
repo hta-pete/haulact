@@ -1675,6 +1675,10 @@ footer .copyright span {
   font-weight: 600;
   text-transform: uppercase;
 }
+.driver-story-wrap blockquote p:after {
+  width: 100px;
+  height: 5px;
+}
 .driver-story-wrap figcaption {
   font-size: 13px;
   font-weight: 500;
@@ -2317,6 +2321,7 @@ form .cancel-btn {
   font-size: 50px;
   line-height: 55px;
   text-align: center;
+  margin-bottom: 30px;
 }
 .career-wrap p {
   font-size: 15px;
@@ -2340,7 +2345,6 @@ form .cancel-btn {
   max-width: 600px;
   margin: 0 auto;
   box-shadow: 0 30px 120px 0 rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
   overflow: hidden;
   background: #191e2e;
   -webkit-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -2368,7 +2372,6 @@ form .cancel-btn {
   -webkit-transform: scale(0.6);
   transform: scale(0.6);
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
   overflow: hidden;
   background: #191e2e;
   -webkit-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -2394,7 +2397,6 @@ form .cancel-btn {
   -webkit-transform: scale(0.6);
   transform: scale(0.6);
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
   overflow: hidden;
   background: #191e2e;
   -webkit-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -2705,6 +2707,159 @@ form .cancel-btn {
     height: 4px;
   }
 }
+.team-grid {
+  padding: 120px 0;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+.team-grid h3 {
+  font-size: 40px;
+  line-height: 40px;
+}
+.team-grid .grid {
+  margin-top: 60px;
+}
+.team-grid .col-1-4 {
+  width: 22%;
+  margin: 0 1.5% 30px 1.5%;
+}
+.team-grid .col-1-4 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.team-grid .col-1-4 .team-grid-name {
+  margin-top: 10px;
+}
+.team-grid .col-1-4 .team-grid-name h4 {
+  letter-spacing: 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+.team-grid .col-1-4 .team-grid-name span {
+  font-size: 12px;
+}
+
+.remembering-tom {
+  padding: 150px 0;
+  background: #273050;
+}
+.remembering-tom h4 {
+  font-size: 40px;
+  line-height: 40px;
+  color: white;
+  margin-bottom: 50px;
+}
+.remembering-tom p {
+  color: white;
+}
+.remembering-tom .col-1-25 {
+  padding-right: 30px;
+}
+.remembering-tom .col-1-25 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: 117px;
+}
+.remembering-tom .col-1-75 {
+  position: relative;
+  padding-left: 30px;
+}
+.remembering-tom .col-1-75 > div {
+  width: 100%;
+}
+.remembering-tom figcaption {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 10px;
+}
+
+.remembering-tom-slider {
+  position: relative;
+  width: 100%;
+  margin: 60px 0;
+}
+.remembering-tom-slider .remembering-tom-slides {
+  box-shadow: 0 30px 90px 0 rgba(0, 0, 0, 0.5);
+}
+.remembering-tom-slider img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.remembering-tom-slider .remembering-tom-next-btn {
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  top: 50%;
+  margin-top: -25px;
+  right: -25px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+}
+.remembering-tom-slider .remembering-tom-next-btn i {
+  font-size: 16px;
+  color: #273050;
+}
+
+.act-plaza {
+  position: relative;
+  padding: 150px 0;
+  border-top: 1px solid #ddd;
+}
+.act-plaza h2 {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.act-plaza p {
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  max-width: 700px;
+  margin: 25px auto 0 auto;
+}
+
+.act-plaza-slider {
+  position: relative;
+  margin-top: 60px;
+}
+.act-plaza-slider .col-1-3 {
+  margin: 0;
+}
+.act-plaza-slider .col-1-3:focus {
+  outline: none;
+}
+.act-plaza-slider img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.act-plaza-slider .act-plaza-next-btn {
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  top: 50%;
+  margin-top: -25px;
+  right: -10px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+}
+.act-plaza-slider .act-plaza-next-btn i {
+  font-size: 16px;
+  color: #273050;
+}
+
 /* ––––––––––––––––––––––––––––––––––––––––––––
 
 -- Media
