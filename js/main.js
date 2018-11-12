@@ -240,7 +240,7 @@ $(function(){
     $('.flipping-drivers-slider-next-btn').on('click', flipDrivers);
 
 
-
+    // Hover video group animation
     $('.act-video').on('mousemove', moveThumb);
 
     function moveThumb(e){
@@ -267,14 +267,27 @@ $(function(){
     });
 
 
-
-
-
-
+    // Open mobile menu
     $('.mobile-menu-btn').on('click', function(){
 
       $(this).toggleClass('active');
       $('#mobile-menu, #main, body, .site-header__apply').toggleClass('active');
+
+    });
+
+    // Close modals
+    $('.close-modal-btn, .close-modal-link').on('click', function(){
+
+      $('.modal-window').fadeOut('fast');
+
+    });
+    $(document).on('click', function(e) {
+
+        if (!$(e.target).closest('.modal').length){
+
+          $('.modal-window').fadeOut('fast');
+
+        }
 
     });
 
