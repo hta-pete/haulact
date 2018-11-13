@@ -1245,9 +1245,12 @@ footer .copyright span {
   text-align: center;
   padding: 90px 0;
 }
+.home-programs .container-large {
+  max-width: 1292px;
+}
 .home-programs h2 {
-  font-size: 35px;
-  line-height: 35px;
+  font-size: 40px;
+  line-height: 40px;
 }
 .home-programs .col-1-3 {
   position: relative;
@@ -1288,8 +1291,8 @@ footer .copyright span {
   text-align: left;
 }
 .home-programs .programs-copy h4 {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 25px;
+  line-height: 25px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -1305,7 +1308,7 @@ footer .copyright span {
     text-align: center;
     padding: 50px 0 0 0;
   }
-  .home-programs .container {
+  .home-programs .container-large {
     padding: 0 15px;
   }
   .home-programs h2 {
@@ -1413,15 +1416,15 @@ footer .copyright span {
   z-index: 10;
   top: 50%;
   margin-top: 25px;
-  right: -40px;
-  width: 40px;
-  height: 40px;
+  right: -5px;
+  width: 50px;
+  height: 50px;
   background: white;
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
   border-radius: 60px;
 }
 .slider-next-btn i {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 40px;
   color: #273050;
 }
