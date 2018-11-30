@@ -1960,6 +1960,58 @@ footer .copyright span {
     margin-bottom: 30px;
   }
 }
+.core-values-wrap {
+  padding: 160px 0 90px 0;
+}
+.core-values-wrap h2 {
+  font-size: 60px;
+  line-height: 65px;
+  margin-bottom: 30px;
+  color: white;
+}
+.core-values-wrap h3 {
+  font-size: 18px;
+  line-height: 23px;
+  color: white;
+}
+.core-values-wrap p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.6);
+}
+.core-values-wrap .center-text {
+  text-align: center;
+}
+
+.core-values-grid {
+  margin-top: 30px;
+}
+.core-values-grid .core-value {
+  padding: 30px;
+}
+.core-values-grid .core-value .core-value-wrap {
+  padding: 50px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.3);
+}
+.core-values-grid .core-value h3 {
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 20px;
+  color: #273050;
+}
+.core-values-grid .core-value h4 {
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0 auto 20px auto;
+}
+.core-values-grid .core-value p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #273050;
+}
+
 .bg-blue {
   background: #273050;
 }
