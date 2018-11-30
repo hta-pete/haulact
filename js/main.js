@@ -289,19 +289,43 @@ $(function(){
 
     });
 
-    // Close modals
+    // Modals
     $('.close-modal-btn, .close-modal-link').on('click', function(){
 
-      $('.modal-window').fadeOut('fast');
+        $('.modal-window').fadeOut('fast', function(){
 
-    });
-    $(document).on('click', function(e) {
+            if( $('#video-modal') ){
+
+              $('#video-modal iframe').attr('src', '');
+
+            }
+
+        });
+    }); 
+    $('.modal-window').on('click', function(e) {
 
         if (!$(e.target).closest('.modal').length){
 
-          $('.modal-window').fadeOut('fast');
+          $('.modal-window').fadeOut('fast', function(){
+
+            if( $('#video-modal') ){
+
+              $('#video-modal iframe').attr('src', '');
+
+            }
+
+          });
 
         }
+
+    });
+    $('.video-play-btn, .play-btn').on('click', function(){
+
+      var videoURL = $(this).data('url');
+      console.log(videoURL)
+
+      $('#video-modal iframe').attr('src', videoURL);
+      $('#video-modal').fadeIn('fast');
 
     });
 

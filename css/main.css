@@ -2968,6 +2968,7 @@ form .cancel-btn {
   border-radius: 17px;
   background: #273050;
   text-align: center;
+  cursor: pointer;
 }
 .video-cat-list .video-cat-list-item-play-group .play-btn i {
   font-size: 6px;
@@ -3002,7 +3003,7 @@ form .cancel-btn {
   width: 100%;
   height: 100%;
   padding: 0 20px;
-  background: rgba(29, 37, 65, 0.9);
+  background: rgba(29, 37, 65, 0.95);
   text-align: center;
 }
 .modal-window .modal {
@@ -3017,6 +3018,7 @@ form .cancel-btn {
 }
 .modal-window .modal .close-modal-btn {
   position: absolute;
+  z-index: 88;
   width: 40px;
   height: 40px;
   top: -20px;
@@ -3087,6 +3089,69 @@ form button[type="submit"] {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+}
+
+#video-modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 750px;
+  padding: 0 20px;
+  background: rgba(29, 37, 65, 0.95);
+  overflow: scroll;
+}
+@media (max-width: 600px) {
+  #video-modal {
+    min-height: 480px;
+  }
+}
+#video-modal .container {
+  position: relative;
+  max-width: 960px;
+  padding: 0;
+  background: black;
+  height: 540px;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+  margin-top: 0;
+}
+@media (max-width: 960px) {
+  #video-modal .container {
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+  }
+}
+#video-modal .video-container {
+  width: 100%;
+}
+#video-modal .video-container iframe {
+  position: absolute;
+  z-index: 66;
+  top: 50%;
+  margin-top: -270px;
+  left: 0;
+  width: 100%;
+  height: 540px;
+}
+@media (max-width: 960px) {
+  #video-modal .video-container iframe {
+    top: 0;
+    margin-top: 0;
+    height: 100%;
+  }
+}
+#video-modal .video-container .ytp-title-text {
+  display: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */
