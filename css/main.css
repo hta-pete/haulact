@@ -401,6 +401,10 @@ p:first-of-type {
   justify-content: center;
 }
 
+.center-text {
+  text-align: center;
+}
+
 /* ––––––––––––––––––––––––––––––––––––––––––––
 
 -- Header
@@ -1429,90 +1433,7 @@ footer .copyright span {
   color: #273050;
 }
 
-/* ––––––––––––––––––––––––––––––––––––––––––––
 
--- Homepage core values
-
-––––––––––––––––––––––––––––––––––––––––––– */
-.home-core-values {
-  overflow: hidden;
-  position: relative;
-  padding: 100px 0 70px 0;
-  background: white;
-  text-align: center;
-}
-.home-core-values h2 {
-  font-size: 150px;
-  line-height: 170px;
-  font-weight: 600;
-  color: #273050;
-  opacity: 0.1;
-  filter: alpha(opacity=10);
-}
-.home-core-values .home-core-values_values {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  height: 20px;
-  top: 50%;
-  margin-top: -22px;
-}
-.home-core-values span {
-  display: inline-block;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin: 0 5px;
-  padding-top: 12px;
-}
-.home-core-values span.divider {
-  color: #ddd;
-}
-.home-core-values .primary-btn {
-  margin-top: 30px;
-  color: #f59348;
-}
-
-@media (max-width: 480px) {
-  .home-core-values {
-    overflow: hidden;
-    position: relative;
-    padding: 40px 0 50px 0;
-    background: white;
-    text-align: center;
-  }
-  .home-core-values h2 {
-    font-size: 50px;
-    line-height: 70px;
-    font-weight: 600;
-    color: #273050;
-    opacity: 0.15;
-    filter: alpha(opacity=15);
-  }
-  .home-core-values .home-core-values_values {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    height: 10px;
-    top: 50%;
-    margin-top: -40px;
-  }
-  .home-core-values span {
-    display: inline-block;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 0 2px;
-    padding-top: 12px;
-    font-size: 10px;
-  }
-  .home-core-values span.divider {
-    display: none;
-    color: #ddd;
-  }
-  .home-core-values .primary-btn {
-    margin-top: 20px;
-    color: #f59348;
-  }
-}
 /* ––––––––––––––––––––––––––––––––––––––––––––
 
 -- Driver Stories
