@@ -779,7 +779,6 @@ footer .container {
 footer .footer-apply-anim {
   padding: 90px 0 60px 0;
   background: #273050 url(../img/footer-apply-anim-bg.jpg) no-repeat center;
-  background-size: cover;
   text-align: center;
 }
 footer .footer-apply-anim h2 {
@@ -800,7 +799,7 @@ footer .footer-apply-anim p {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0px;
-  color: rgba(255, 255, 255, 0.6);
+  color: white;
 }
 footer .footer-apply-anim .apply-btn {
   display: block;
