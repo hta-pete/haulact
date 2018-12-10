@@ -330,6 +330,82 @@ $(function(){
     });
 
 
+    // Footer apply now text animation
+    var slideHeadline = $('.footer-apply-anim h2');
+    var slideText     = $('.footer-apply-anim p');
+    var words         = ['I AM ACT','IMAGINE'];
+    var words2        = ["Our story couldn't be told without our drivers.","A company that's truly focused on drivers."];
+    var count         = 0;
+
+    var textSlider = setInterval(function(){
+
+        animateText();
+
+    },5000);
+
+    function animateText(){
+
+        if (count == words.length) {
+            count = 0;
+        }
+
+        slideHeadline.html(words[count].replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+        slideText.html(words2[count]);
+        
+        var text = anime.timeline()
+          .add({
+            targets: '.footer-apply-anim h2 .letter',
+            rotateY: [-90,0],
+            translateZ: 0,
+            opacity: [0,1],
+            easing: "easeOutExpo",
+            duration: 2000,
+            delay: function(el, i) {
+              return 250 + 30 * i;
+            }
+          })
+          .add({
+            targets: '.footer-apply-anim h2 .letter',
+            rotateY: [0,90],
+            opacity: [1,0],
+            easing: "easeInExpo",
+            duration: 2000,
+            offset: 2400,
+            delay: function(el, i) {
+              return 500 + 30 * i;
+            }
+          });
+      
+        var text2 = anime.timeline()
+          .add({
+            targets: '.footer-apply-anim p',
+            rotateX: [90,0],
+            translateZ: 0,
+            opacity: [0,1],
+            easing: "easeOutExpo",
+            duration: 2000,
+            delay: function(el, i) {
+              return 250 + 30 * i;
+            }
+          })
+          .add({
+            targets: '.footer-apply-anim p',
+            rotateX: [0,-90],
+            opacity: [1,0],
+            easing: "easeInExpo",
+            duration: 2000,
+            offset: 2400,
+            delay: function(el, i) {
+              return 500 + 30 * i;
+            }
+          });
+         
+        count++;
+
+    }
+    animateText();
+
+
 
 });
 
