@@ -576,11 +576,16 @@ form{
             max-width:230px;
             margin-bottom:10px;
             font-size:15px;
-            //margin-left:20px;
             &:last-child{
                 margin-bottom:0;
             }
         }
+    }
+    .align-center{
+        text-align:center;
+    }
+    .col-1{
+        margin-top:60px;
     }
 }
 
