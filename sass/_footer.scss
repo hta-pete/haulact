@@ -96,6 +96,22 @@ footer{
 }
 
 
+@media(max-width:600px){
+
+
+    footer{
+        .footer-apply-anim{
+            h2{
+                font-size:90px;
+                line-height:90px;
+                letter-spacing:9px;
+            }
+        }
+    }
+
+}
+
+
 @media(max-width:480px){
 
 
@@ -104,6 +120,21 @@ footer{
         .container{
             max-width:1280px;
             padding:50px 0 40px 0;
+        }
+        .footer-apply-anim{
+            padding:50px 0 50px 0;
+            h2{
+                font-size:60px;
+                line-height:60px;
+                letter-spacing:9px;
+            }
+            p{
+                font-size:14px;
+                line-height:18px;
+            }
+            .apply-btn{
+                margin:40px auto 0 auto;
+            }
         }
         .social-menu{
             text-align:center;

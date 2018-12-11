@@ -861,6 +861,13 @@ footer .copyright span {
   color: #999;
 }
 
+@media (max-width: 600px) {
+  footer .footer-apply-anim h2 {
+    font-size: 90px;
+    line-height: 90px;
+    letter-spacing: 9px;
+  }
+}
 @media (max-width: 480px) {
   footer {
     background: #f9f9f9;
@@ -868,6 +875,21 @@ footer .copyright span {
   footer .container {
     max-width: 1280px;
     padding: 50px 0 40px 0;
+  }
+  footer .footer-apply-anim {
+    padding: 50px 0 50px 0;
+  }
+  footer .footer-apply-anim h2 {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 9px;
+  }
+  footer .footer-apply-anim p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  footer .footer-apply-anim .apply-btn {
+    margin: 40px auto 0 auto;
   }
   footer .social-menu {
     text-align: center;
