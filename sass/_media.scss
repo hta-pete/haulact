@@ -27,7 +27,6 @@
         }
     }
 }
-
 .media-wrap{
 	padding:90px 0;
 }
@@ -109,11 +108,90 @@
 	}
 
 }
-
-
 .link_secondary{
 	color:$primary;
 	font-size:14px;
 	font-weight:500;
 	text-decoration:underline;
 }
+
+
+@media(max-width:720px){
+
+    .media-hero{
+        #apply-now-hero-copy{
+            padding-top:120px;
+            h2{
+                font-size:45px;
+                line-height:45px;
+                &:after{
+                    width:70px;
+                }
+            }
+        }
+    }
+    .media-wrap{
+        padding:60px 0;
+    }
+    .video-cat{
+        margin-top:30px;
+
+    }
+    .video-cat-title{
+        width:100%;
+        float:none;
+        margin-bottom:20px;
+        h3{
+            font-size:20px;
+            line-height:20px;
+        }
+    }
+    .video-cat-list{
+        width:100%;
+        float:none;
+        .video-cat-list-item{
+            display:block;
+            padding-bottom:20px;
+            margin-bottom:20px;
+        }
+        .video-cat-list-item-thumb{
+            float:none;
+            margin-right:0;
+            margin-bottom:15px;
+        }
+        .video-cat-list-item-description{
+            float:none;
+            h4{
+                font-size:17px;
+                line-height:20px;
+            }
+            p{
+                margin-top:5px;
+                font-size:14px;
+                line-height:20px;
+            }
+        }
+
+    }
+  
+}
+
+@media(max-width:480px){
+
+    .media-hero{
+        height:300px;
+        #apply-now-hero-copy{
+            padding-top:130px;
+            h2{
+                font-size:40px;
+                line-height:40px;
+                &:after{
+                    width:50px;
+                }
+            }
+        }
+    }
+  
+}
+
+

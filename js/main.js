@@ -162,6 +162,22 @@ $(function(){
                 speed: 600,
                 prevArrow: false,
                 nextArrow: $('.act-plaza-next-btn'),
+                responsive: [
+                  {
+                    breakpoint: 720,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 1
+                    }
+                  },
+                  {
+                    breakpoint: 480,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                  }
+                ]
           });
 
     }
